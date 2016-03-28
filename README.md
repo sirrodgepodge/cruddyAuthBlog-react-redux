@@ -7,5 +7,3 @@ If you don't have Node.js or MongoDB installed, install them with <a href="http:
   "brew install mongodb"
 
 Run the command "mongod" in one terminal window to start running a local instance of MongoDB, then "npm start" from inside this app's folder and visit "localhost:3000" (if you've changed the port inside of the ".env" file then replace "3000" with your specified port)
-
-The app uses jQuery on the front end as back end is the focus so I wanted to make the front end understood by all javascript devs.
