@@ -90,6 +90,7 @@ NavAuth.propTypes = {
   user: PropTypes.shape({
     email: PropTypes.string.isRequired,
     createdDate: PropTypes.string.isRequired,
+    hasPassword: propTypes.bool.isRequired,
     google: PropTypes.shape({
       _id: PropTypes.string.isRequired,
       photo: PropTypes.string.isRequired,
