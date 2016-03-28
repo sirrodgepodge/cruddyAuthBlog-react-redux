@@ -1,6 +1,6 @@
 # cruddyAuthBlog
 
-This is a simple app to demonstrate how to execute CRUD operations with <a href="http://nodejs.org/api/synopsis.html">Node.js</a> + <a href="http://docs.mongodb.org">MongoDB</a> + <a href="http://expressjs.com/en/4x/api.html">Express.js</a> + <a href="http://mongoosejs.com/docs/guide.html">Mongoose.js</a> + <a href="http://passportjs.org/docs/overview">Passport.js</a> + <a href="https://facebook.github.io/react/docs/getting-started.html">React.js</a>
+This is a simple app to demonstrate how to execute CRUD operations with <a href="http://nodejs.org/api/synopsis.html">Node.js</a> + <a href="http://docs.mongodb.org">MongoDB</a> + <a href="http://expressjs.com/en/4x/api.html">Express.js</a> + <a href="http://mongoosejs.com/docs/guide.html">Mongoose.js</a> + <a href="http://passportjs.org/docs/overview">Passport.js</a> + <a href="https://facebook.github.io/react/docs/getting-started.html">React.js</a> + <a href="http://redux.js.org/index.html">Redux</a>
 
 If you don't have Node.js or MongoDB installed, install them with <a href="http://brew.sh/">Homebrew</a>: 
   "brew install node"
