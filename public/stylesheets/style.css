@@ -1,0 +1,151 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #ecf1f1;
+  color: #332f2b;
+}
+
+li {
+  list-style: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+.cruddy-auth-blog-nav {
+    border-radius: 0;
+    background-color: #332f2b;
+    padding-right: 15px;
+    height: 87px;
+}
+
+.cruddy-auth-blog-nav > * {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar-header {
+    z-index: 1;
+    cursor: pointer;
+}
+
+.fa {
+    transition: font-size 0.3s ease-in-out;
+    display: inline-block;
+    width: 14px;
+    text-align: center;
+}
+
+.glyphicon {
+    color: #e0e4e4;
+}
+
+.navbar-brand,
+.navbar-brand:visited,
+.navbar-brand:focus {
+    color: #e0e4e4;
+    font-size: 23px;
+    font-weight: 200;
+    margin-right: 22px;
+    transition: color 0.2s ease-in-out;
+    padding-left: 15px;
+}
+
+.navbar-brand b {
+  font-weight: 500;
+}
+
+.navbar-right {
+    padding-top: 1px;
+    padding-right: 10px;
+}
+
+.nav-button, .nav-button:focus {
+    display: inline-block !important;
+    color: #e0e4e4;
+    font-size: 14.5px;
+    font-weight: 100;
+    white-space: nowrap;
+}
+
+.nav-input {
+  color: #332f2b;
+}
+
+.local-auth-button:hover,
+.log-out-button:hover {
+    color: #f8e813;
+}
+
+.log-out-button:hover, .log-out-button:focus {
+  background-color: #332f2b !important;
+  border: none;
+}
+
+.log-out-button {
+  visibility: hidden;
+}
+
+.log-out-button.show {
+  visibility: visible;
+}
+
+.local-auth-button {
+  background-color: #332f2b;
+}
+
+.o-auth-btn {
+  color: #f8e813;
+}
+
+.o-auth-btn,
+.local-auth-button,
+.log-out-button {
+  transition: color .2s;
+}
+
+.o-auth-btn:hover {
+  color: rgb(110, 48, 212);
+}
+
+.user-photo {
+    display: none !important;
+    margin: 10px 10px 0 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #f8e813;
+    background: #000 no-repeat center /contain;
+    cursor: default;
+}
+
+.user-photo.show {
+  display: block !important;
+}
+
+.blog-list {
+  margin: 87px auto 0;
+  padding: 50px;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+}
+
+.blog-add-post {
+  margin-bottom: 20px;
+}
+
+.blog-add-post-title,
+.blog-add-post-body {
+  margin: 5px 0 7px;
+  width: 100%;
+}
