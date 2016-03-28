@@ -5,7 +5,7 @@ module.exports = {
 
   entry: [
     'webpack-hot-middleware/client',
-    './assets/javascripts/index.js',
+    './client/javascripts/index.js',
   ],
 
   output: {

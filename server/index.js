@@ -1,7 +1,5 @@
       //Express and Express middlewares
 const express = require('express'),
-      session = require('express-session'),
-      MongoStore = require('connect-mongo')(session),
       path = require('path'), // handles smooth joining of file paths (inserts slashes where needed, prevents double slashes)
       logger = require('morgan'),
       cookieParser = require('cookie-parser'),
@@ -26,7 +24,7 @@ dotenv.config();
 
 // Express needs to be instantiated, it's possible to run multiple Express instances in the same node app and have them listen on different ports
 const app = express(),
-      serverPort = process.env.PORT || 3000; // If port has been provided by environmental variables use that, else defauly to 3000
+      serverPort = process.env.PORT || process.env.DEV_PORT || 3000; // If port has been provided by environmental variables use that, else defauly to 3000
 
 
 // Runs React-hot-loader via our webpack dev configuration if in dev mode
@@ -72,10 +70,10 @@ const startDbPromise = require(path.join(root,'db'))(process.env.DATABASE_URI);
 
 startDbPromise.then(() => {
   // Bring in API routes from crud folder
-  app.use('/api', require(path.join(root, 'crud'))); //// Note that we do not need to specify "index.js" inside of the "crud" folder, if file is unspecified "index.js" is default when folder is required
+  app.use('/api', require(path.join(root, 'server', 'crud'))); //// Note that we do not need to specify "index.js" inside of the "crud" folder, if file is unspecified "index.js" is default when folder is required
 
   // Bring in Auth routes from auth folder (must feed in app as middlewares are added at this step)
-  require(path.join(root, 'auth'))(app);
+  require(path.join(root, 'server', 'auth'))(app);
 
   // Serve index.html from root
   app.get('/', (req, res, next) => res.sendFile('/index.html', {

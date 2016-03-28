@@ -144,6 +144,10 @@ a:focus {
   margin-bottom: 20px;
 }
 
+.blog-post-list {
+  padding: 0;
+}
+
 .blog-add-post-title,
 .blog-add-post-body {
   margin: 5px 0 7px;
