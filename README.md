@@ -6,7 +6,7 @@ If you do not have <a href="http://brew.sh/">Homebrew</a> (Mac package manager) 
     `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
 If you don't have Node.js or MongoDB installed, once you have installed Homebrew install them with the following commands in your terminal: 
-    brew install node
-    brew install mongodb
+    `brew install node`
+    `brew install mongodb`
 
-Run the command "mongod" in one terminal window to start running a local instance of MongoDB, then in another terminal window, after you have navigated to inside this cloned git repo, run "npm start" and visit "localhost:3000" in your browser.
+Run the command "mongod" in one terminal window to start running a local instance of MongoDB, then in another terminal window, after you have navigated to inside this cloned git repo, run `npm start`, then visit "localhost:3000" in your browser.
